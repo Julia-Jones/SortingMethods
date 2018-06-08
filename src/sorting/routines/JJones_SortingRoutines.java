@@ -301,7 +301,7 @@ int total =0;
       
         for(int i = 0; i < amount; i++){
       int numb = -1000 + randNumber.nextInt(1000);
-           integer.add(numb);
+           integer.add(numb); 
            } 
         
       //goes through and enters each number on a new line
@@ -329,7 +329,7 @@ int total =0;
                          wrapperArr[l] = wrapperArr[0];
                          wrapperArr[0] = temp2;
                          
-          for (int r=0; r < integer.size();r++){
+          for (int r=0; r < wrapperArr.length();r++){
             a = (Integer) stepper.next();
             temp = temp + a.toString() + "\n";
         }
